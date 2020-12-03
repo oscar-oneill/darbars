@@ -1,0 +1,51 @@
+#about {
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+}
+
+#split_a {
+    background: rgb(206, 248, 244);
+    color: rgb(44, 171, 173);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#about_header {
+    font-size: 45px;
+}
+
+#about_text {
+    font-family: 'Founders Grotesk-Regular';
+    font-size: 17px;
+}
+
+#split_b {
+    background: black;
+    background-image: url('../media/burger.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .split {
+        height: 50%;
+        width: 100%;
+    }
+}

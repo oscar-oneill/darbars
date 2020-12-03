@@ -1,0 +1,101 @@
+#contact_container {
+    color: rgb(0, 0, 0);
+    min-height: auto;
+    width: 100vw;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    position: absolute;
+    z-index: -1;
+}
+
+#contact__header {
+    height: auto;
+    width: 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contact__box {
+    display: grid;
+    justify-content: center;
+    height: auto;
+}
+
+.box {
+    width: 400px;
+    margin-bottom: 3px;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-family: 'Founders Grotesk-Regular';
+    padding-left: 10px;
+    background: rgba(245, 245, 245, 0.965);
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+.message {
+    height: 315px;
+    padding: 15px;
+}
+
+.contact__name, .subject, .email, .submit {
+    height: 75px;
+}
+
+.submit {
+    font-family: 'Founders Grotesk-Regular';
+    font-size: 15px;
+    cursor: pointer;
+    background: rgb(44, 171, 173);
+    color: rgb(255, 255, 255);
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: rgb(250, 128, 114);
+    color: rgb(255, 255, 255);
+    transition: .3s ease-in-out;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000000;
+}
+
+#contact__phone {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 810px) {
+    .contact__box {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, 80px);
+        column-gap: 5px;
+    }
+
+    .subject, .email, .submit {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}

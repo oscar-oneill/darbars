@@ -1,0 +1,136 @@
+.navigation {
+    height: 85px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: rgb(255, 255, 255);
+}
+
+#nav_logo {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    margin: 0px 15px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 20px;
+    font-size: 17px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    transition: .2s ease-out;
+}
+
+a:hover {
+    color: rgb(240, 128, 128);
+}
+
+.nav_items {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.link_color {
+    color: rgb(0, 0, 0);
+    transition: .2s ease-out;
+}
+
+.link_color:hover {
+    color: rgb(240, 128, 128);
+}
+
+#burger {
+    display: none;
+}
+
+.mobile_list {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #burger {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    #burger:hover {
+        color: rgb(240, 128, 128);
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .mobile_list {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: .3s ease-in-out;
+    }
+
+    .mobile_list.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: .2s ease-in-out;
+        position: absolute;
+        z-index: 1; 
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 15px;
+        text-align: right;
+    }
+
+    .mobile_items {
+        margin-bottom: 25px;
+        font-size: 40px;
+        transition: .2s ease-in-out;
+    }
+
+    .mobile_items:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    .link_color, a {
+        color: rgb(206, 248, 244)
+    }
+
+    .link_color:hover, a:hover {
+        color: white;
+    }
+
+    .blanket {
+        height: 375px;
+        width: 100vw;
+        background: rgb(44, 171, 173);
+        top: 85px;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s ease-out;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transform: translateX(-100px);
+        display: flex;
+        align-items: center;
+    }
+
+    .blanket.active {
+        opacity: 1;
+        visibility: visible;
+        transition: .3s ease-out;
+        transform: translateX(0);
+    }
+}
