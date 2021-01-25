@@ -6,6 +6,8 @@ Visit the current website here: https://www.darbarsonline.com/
 Visit the redesigned website here: https://darbars.vercel.app/
 
 Screenshots
-![Landing](https://i.imgur.com/8v5mnTn.png)
-![About](https://i.imgur.com/M2z6fs5.png)
+![Landing](./images/landing.png)
+![Popular](./images/popular.png)
+![About](./images/about.png)
+![Contact](./images/contact.png)
 

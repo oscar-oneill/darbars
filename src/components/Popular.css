@@ -1,0 +1,46 @@
+#popular {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.pop_header {
+    height: auto;
+    width: auto;
+    position: relative;
+    font-size: 45px;
+    padding: 10px;
+}
+
+.photo_container {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    padding: 10px;
+}
+
+.food_images {
+    height: 300px;
+    width: 300px;
+    background: slateblue;
+    margin-bottom: 5px;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .pop_header {
+        font-size: 35px;
+    }
+}

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('../media/HONG_FENG.unsplash.jpeg');
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url('../media/HONG_FENG.unsplash.jpeg');
     background-size: cover;
     padding: 20px;
 }
@@ -22,9 +22,3 @@
     color: rgb(255, 255, 255);
     font-family: 'Founders Grotesk-Regular';
 }
-
-/* @media screen and (max-width: 600px) {
-    #text_main {
-        font-size: 5vw;
-    }
-} */

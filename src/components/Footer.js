@@ -42,16 +42,16 @@ const Footer = () => {
             <div id='connect'>
                 <span>Stay Connected</span> <br/>
                 <ul id='social'>
-                    <li><a href='https://www.facebook.com/Darbars-Chicken-Ribs-120908984592237/'>
+                    <li><a target="_blank" rel="noreferrer noopener" href='https://www.facebook.com/Darbars-Chicken-Ribs-120908984592237/'>
                         <FontAwesomeIcon className='icons' icon={faFacebook}/>
                     </a></li>
-                    <li><a href='https://instagram.com/darbarshalal/'>
+                    <li><a target="_blank" rel="noreferrer noopener" href='https://instagram.com/darbarshalal/'>
                         <FontAwesomeIcon className='icons' icon={faInstagram}/>
                     </a></li>
-                    <li><a href='https://twitter.com/darbarshalal'>
+                    <li><a target="_blank" rel="noreferrer noopener" href='https://twitter.com/darbarshalal'>
                         <FontAwesomeIcon className='icons' icon={faTwitter}/>
                     </a></li>
-                    <li><a href='https://www.yelp.com/biz/darbars-chicken-and-ribs-south-richmond-hill'>
+                    <li><a target="_blank" rel="noreferrer noopener" href='https://www.yelp.com/biz/darbars-chicken-and-ribs-south-richmond-hill'>
                         <FontAwesomeIcon className='icons' icon={faYelp}/>
                     </a></li>
                 </ul>

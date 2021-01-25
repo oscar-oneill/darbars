@@ -17,14 +17,14 @@ const Navigation = () => {
             </a>
            
            <ul ref={linkRef} className={`nav_list ${isActive ? "active" : "inactive"}`}>
+                <li onClick={menuClick} className="nav_items">
+                   <a href="/#about">About</a>
+                </li>
                <li onClick={menuClick} className="nav_items">
-                   <Link className="link_color" to="/menu">Menu</Link>
+                   <a href="/#popular">Popular Items</a>
                </li>
                <li onClick={menuClick} className="nav_items">
                    <a target="_blank" href="https://direct.chownow.com/order/18454/locations/26474" rel="noreferrer noopener">Order Online</a>
-               </li>
-               <li onClick={menuClick} className="nav_items">
-                   <a href="/#about">About</a>
                </li>
                <li onClick={menuClick} className="nav_items">
                    <Link className= "link_color" to="/contact">Contact Us</Link>
@@ -35,13 +35,13 @@ const Navigation = () => {
                 <div ref={dropdownRef} className={`blanket ${isActive ? "active" : "inactive"}`}>
                     <ul ref={linkRef} className={`mobile_list ${isActive ? "active" : "inactive"}`}>
                         <li onClick={menuClick} className="mobile_items">
-                            <Link className="link_color" to="/menu">Menu</Link>
+                            <a href="/#about">About</a>
+                        </li>
+                        <li onClick={menuClick} className="mobile_items">
+                            <a href="/#popular">Popular Items</a>
                         </li>
                         <li onClick={menuClick} className="mobile_items">
                             <a target="_blank" href="https://direct.chownow.com/order/18454/locations/26474" rel="noreferrer noopener">Order Online</a>
-                        </li>
-                        <li onClick={menuClick} className="mobile_items">
-                            <a href="/#about">About</a>
                         </li>
                         <li onClick={menuClick} className="mobile_items">
                             <Link className= "link_color" to="/contact">Contact Us</Link>

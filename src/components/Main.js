@@ -9,7 +9,7 @@ const Main = () => {
             </div>
 
             <div id='text_sub'>
-                We don't do fast food, we do fresh food.
+                "We don't do fast food, we do fresh food."
             </div>
         </div>
     )
